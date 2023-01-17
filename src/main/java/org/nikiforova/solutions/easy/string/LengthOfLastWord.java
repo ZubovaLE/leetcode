@@ -1,14 +1,12 @@
 package org.nikiforova.solutions.easy.string;
 
-public class LengthofLastWord {
+public class LengthOfLastWord {
     private final static String DELIMITER = " ";
 
     /**
-     * Given a string s consisting of words and spaces.
-     * A word is a maximal substring consisting of non-space characters only.
-     *
-     * @param s
+     * @param s - a string consisting of words and spaces
      * @return the length of the last word in the string
+     * Note: a word is a maximal substring consisting of non-space characters only
      */
     public static int lengthOfLastWord(String s) {
         if (s == null) return 0;
