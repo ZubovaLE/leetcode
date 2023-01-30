@@ -1,4 +1,4 @@
-package org.nikiforova.solutions.medium;
+package org.nikiforova.solutions.medium.string;
 
 import java.util.ArrayList;
 import java.util.Collections;
