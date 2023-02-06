@@ -9,19 +9,18 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ConcatenationOfArrayTest {
+class TemperatureTest {
     private static Stream<Arguments> provideParameters() {
         return Stream.of(
-                Arguments.of(new int[]{1, 2, 1}, new int[]{1, 2, 1, 1, 2, 1}),
-                Arguments.of(new int[]{1, 3, 2, 1}, new int[]{1, 3, 2, 1, 1, 3, 2, 1}),
-                Arguments.of(new int[]{1}, new int[]{1, 1})
+                Arguments.of(36.50, new double[]{309.65000, 97.70000}),
+                Arguments.of(122.11, new double[]{395.26000, 251.79800})
         );
     }
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    @DisplayName("Test getConcatenation with different parameters")
-    void testGetConcatenation(int[] nums, int[] expected) {
-        assertArrayEquals(expected, ConcatenationOfArray.getConcatenation(nums));
+    @DisplayName("Test convertTemperature with different parameters")
+    void testConvertTemperature(double celsius, double[] expected) {
+        assertArrayEquals(expected, Temperature.convertTemperature(celsius));
     }
 }
