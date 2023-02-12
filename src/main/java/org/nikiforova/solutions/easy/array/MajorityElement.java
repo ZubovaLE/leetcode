@@ -17,7 +17,6 @@ public class MajorityElement {
                 numsAndCount.replace(num, current + 1);
             }
         }
-
         return Collections.max(numsAndCount.entrySet(), Comparator.comparingInt(Map.Entry::getValue)).getKey();
     }
 }
