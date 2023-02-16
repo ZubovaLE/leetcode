@@ -6,9 +6,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MajorityElement {
-    private static final Map<Integer, Integer> numsAndCount = new HashMap<>();
+    private final Map<Integer, Integer> numsAndCount = new HashMap<>();
 
-    public static int majorityElement(int[] nums) {
+    /**
+     * @param nums - an array
+     * @return the majority element that appears more than n / 2 times
+     */
+    public int majorityElement(int[] nums) {
         if (nums.length == 1) return nums[0];
         Integer current;
         for (int num : nums) {
