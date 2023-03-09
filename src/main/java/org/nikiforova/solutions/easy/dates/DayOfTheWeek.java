@@ -1,4 +1,4 @@
-package org.nikiforova.solutions.easy.string;
+package org.nikiforova.solutions.easy.dates;
 
 import java.time.LocalDate;
 import java.time.format.TextStyle;

@@ -3,6 +3,7 @@ package org.nikiforova.solutions.easy.string;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.nikiforova.solutions.easy.dates.DayOfTheWeek;
 
 import static org.junit.jupiter.api.Assertions.*;
 
