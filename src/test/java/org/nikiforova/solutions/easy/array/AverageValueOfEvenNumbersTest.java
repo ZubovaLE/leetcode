@@ -9,18 +9,19 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BuildArrayFromPermutationTest {
+class AverageValueOfEvenNumbersTest {
     private static Stream<Arguments> provideParameters() {
         return Stream.of(
-                Arguments.of(new int[]{0, 2, 1, 5, 3, 4}, new int[]{0, 1, 2, 4, 5, 3}),
-                Arguments.of(new int[]{5, 0, 1, 2, 3, 4}, new int[]{4, 5, 0, 1, 2, 3})
+                Arguments.of(new int[]{1, 3, 6, 10, 12, 15}, 9),
+                Arguments.of(new int[]{1, 2, 4, 7, 10}, 0),
+                Arguments.of(new int[]{4, 4, 9, 10}, 0)
         );
     }
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    @DisplayName("Test mostWordsFound with different parameters")
-    void buildArray(int[] nums, int[] expected) {
-        assertArrayEquals(expected, BuildArrayFromPermutation.buildArray(nums));
+    @DisplayName("Test averageValue with different parameters")
+    void averageValue(int[] nums, int expected) {
+        assertEquals(expected, AverageValueOfEvenNumbers.averageValue(nums));
     }
 }
